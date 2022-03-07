@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Omnia para LaunchX</title>
+</head>
+<body>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Estilo de header */
+        header {
+            background-color: #666;
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: white;
+        }
+
+        /* Crear 2 columnas con la misma posición en la fila */
+        nav {
+            float: left;
+            width: 30%;
+            height: 300px;
+            /* only for demonstration, should be removed */
+            background: #ccc;
+            padding: 20px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        article {
+            float: left;
+            padding: 20px;
+            width: 70%;
+            background-color: #f1f1f1;
+            height: 300px;
+        }
+
+        /* Clear floats after the columns */
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Estilo de footer */
+        footer {
+            background-color: #777;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        /* Responsive layout */
+        @media (max-width: 600px) {
+
+            nav,
+            article {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h2>Reclutamiento 4.0</h2>
+    </header>
+
+    <section>
+        <nav>
+            <ul>
+                <li><a href="https://facebook.com/oslomxcc">Facebook</a></li>
+                <li><a href="https://www.linkedin.com/company/77917248">LinkedIn</a></li>
+                <li><a href="https://www.youtube.com/channel/UCF7jaVFqb2TTNPxmJT11TdQ">Youtube</a></li>
+            </ul>
+        </nav>
+
+        <article>
+            <h1>Pre registro</h1>
+            <p>Este formulario es para obtener registros previos al lanzamiento del producto mínimo viable (MVP) para testear las necesidades de los usuarios y mejorar la UX/UI</p>
+            <p>Para registrarse, ingrese sus datos y presione el botón "Enviar".</p>
+            <p>Los datos que se ingresen serán utilizados para contactarlo y/o para realizar pruebas de funcionalidad.</p>
+            <p>Si quieres ir viendo el progreso del proyecto, de lado izquierdo están las redes sociales</p>
+        </article>
+    </section>
+
+
+    <!-- Headings -->
+    <h1>Bienvenidos</h1>
+    <h2>¡Saludos, exploradores!</h2>
+
+    <!-- Parrafos -->
+    <p> Este formulario tiene como objetivo captar interesados en obtener un empleo formal a través de un plataforma en la que estén mostrando sus habilidades tech</p>
+
+    <p>La principal ruta de navegación (inicio) para el reclutador se llamará ReelSkills, haciendo  referencia a un carrusel de habilidades</p>
+    
+    <br>
+
+    <!-- Imágenes -->
+    <img src="https://eloutput.com/app/uploads-eloutput.com/2020/09/Instagram-reels-2.jpg" alt="Reels de habilidades" width="500px" height="500px">
+
+    <h2>Estructura de tu perfil</h2>
+    <!-- Tablas -->
+    <table>
+        <tr>
+            <th>Perfil profesional</th>
+            <th>Principal herramienta</th>
+            <th>Ubicación</th>
+        </tr>
+        <tr>
+            <td>Nombre de tu puesto actual (o el que buscas)</td>
+            <td>Tu fuerte de tecnología, mayor experiencia</td>
+            <td>Estado</td>
+        </tr>
+        <tr>
+            <td>(Ejemplo) Cloud Developer</td>
+            <td>(Ejemplo) Microsoft - Power Platform</td>
+            <td>(Ejemplo) Estado de México</td>
+        </tr>
+    </table>
+
+    <h2>Contenido de tu perfil (podrás dividir tu perfil en categorías, con pestañas de navegación)</h2>
+    <h3>De momento, contemplamos éstas categorías, es probable que se puedan añadir más (puedes sugerir)</h3>
+    <ul>
+        <li>Hacks</li>
+        <li>Productividad</li>
+        <li>Sobre mí</li>
+        <li>Proyectos</li>
+    </ul>
+
+    <h3>Sugerencias de categorías, recuerda que este contenido es para nutrir tu perfil profesional</h3>
+
+    <!-- Labels / Etiquetas -->
+    <label for="Input1"> Sugerencia de categoría 1</label>
+    <br>
+    <!-- Entradas / Inputs -->
+    <input type="text" id="Input1" name="Input1">
+    <br><br>
+
+    <label for="Input2"> Sugerencia de categoría 2</label>
+    <br>
+    <!-- Entradas / Inputs -->
+    <input type="text" id="Input2" name="Input2">
+    <br><br>
+
+    <label for="Input3"> Sugerencia de categoría 3</label>
+    <br>
+    <!-- Entradas / Inputs -->
+    <input type="text" id="Input3" name="Input3">
+    <br><br>
+
+    <hr>
+    <!-- Tipos de Inputs -->
+    <h3>Como llegaste hasta acá, sabemos que te interesa, permítenos contactarte ;)</h3>
+
+    <label for="Input1"> Nombre</label>
+    <br>
+    <!-- Entradas / Inputs -->
+    <input type="text" id="Input1" name="Input1">
+    <br><br>
+    <label for="correo1">Correo electrónico</label><br>
+    <input type="email" id="correo1" name="correo1"><br><br>
+    
+    <label for="tel1">Número de celular</label><br>
+    <input type="tel" id="tel1" name="tel1" maxlength="10"><br><br>
+    
+    <label for="url1">Perfil de LinkedIn</label><br>
+    <input type="url" id="url1" name="url1"><br><br>
+
+    <hr>
+
+    <h2>Cuéntanos tu experiencia</h2><br>
+    <input type="radio" id="roja" name="salsas" value="Roja">
+    <label for="roja">Soy recién egresado, no sé nada del mundo laboral</label><br>
+    <input type="radio" id="verde" name="salsas" value="Verde">
+    <label for="verde">Soy recién egresado, pero he trabajado en proyectos pequeños tipo freelance/hobbie</label><br>
+    <input type="radio" id="guacamole" name="salsas" value="Guacamole">
+    <label for="guacamole">Soy recién egresado y ya tengo al menos 1 año de experiencia</label><br>
+    <input type="radio" id="guacamole" name="salsas" value="Guacamole">
+    <label for="guacamole">Tengo empleo en tech pero quiero cambiar de empresa</label><br>
+    <input type="radio" id="guacamole" name="salsas" value="Guacamole">
+    <label for="guacamole">Tengo empleo pero quiero cambiar de carrera hacia tech</label><br><br>
+    <h2>Salario actual</h2>
+    <label for="tacos">Selecciona un rango, no importa si no estás en el área tech, es para conocer un poco el mercado (: (salario neto)/label><br>
+    <select id="tacos" name="tacos">
+        <option value="suadero">Soy estudihambre :(</option>
+        <option value="suadero">Me pagan con experiencia (De 0 a 4 mil pesos mensuales)</option>
+        <option value="pastor">Me pagan como becario (entre 5 mil y 9 mil pesos mensuales)</option>
+        <option value="campechanos">Me pagan como trainee (entre 10 mil y 15 mil pesos mensuales</option>
+        <option value="tripa">Me pagan como Jr (entre 16 mil y 20 mil pesos mensuales)</option>
+        <option value="tripa">Me pagan como Middle (entre 21 mil y 30 mil pesos mensuales)</option>
+        <option value="tripa">Me pagan como Sr (Más de 30 mil pesos mensuales)</option>
+    </select>
+    
+    <h2>Empresa favorita</h2>
+    <label for="refresco">Elige la empresa en la que te gutaría trabajar (ya sea por cultura, salarios, beneficios, etc.)</label><br>
+    <input list="refresco">
+    <datalist id="refresco">
+        <option value="Facebook">
+        <option value="Amazon">
+        <option value="Netflix">
+        <option value="Google">
+        <option value="Microsoft">
+        <option value="Github"></option>
+    </datalist>
+    <br><br>
+    
+    <h2>Nos gustaría ayudarte a mejorar tu CV en documento (GRATIS)</h2><br>
+    <h3>Muchas empresas, además de reclutar en plataformas, también tienen sus propias plataformas internas con cosas automatizadas que DESCARTAN TU CV EN AUTOMÁTICO</h3>
+    <h3>¿Sabías esto?</h3>
+    <h3>¿Quieres que te ayudemos a mejorar tu CV? Déjalo aquí abajo</h3>
+    <input type="file" id="archivo1" name="archivo1" multiple><br><br>
+
+    
+    <h2>Rango de edad</h2>
+    <label for="vol">(entre 17 y 50): Por ley, sólo se trabaja formalmente al ser mayor de edad, pero igual puedes ir preparando el terreno ;) </label><br>
+    <input type="range" id="vol" name="vol" min="17" max="50"><br>
+
+    
+    <h2>Agradecemos tu tiempo, pronto nos contactaremos contigo</h2>
+    <input type="submit"><br>
+    <hr>
+
+    <footer>
+        <p>Formulario creado por 
+            <a href="https://www.linkedin.com/company/77917248">elpincode</a>
+        </p>
+    </footer>
+</body>
+</html>
